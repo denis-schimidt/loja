@@ -1,2 +1,2 @@
 # loja
-Estudo integrado de Spring Boot, Spring Data, Spring Security, Spring MVC
+Estudo integrado de Spring Boot, Spring MVC, Spring Data, Spring Security com Gradle.  
