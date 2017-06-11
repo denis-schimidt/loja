@@ -1,4 +1,4 @@
-package br.com.casadocodigo.configs;
+package br.com.casadocodigo.loja.configs;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package br.com.casadocodigo.security;
+package br.com.casadocodigo.loja.security;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

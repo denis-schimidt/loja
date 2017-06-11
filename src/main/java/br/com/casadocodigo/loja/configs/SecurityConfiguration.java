@@ -1,4 +1,4 @@
-package br.com.casadocodigo.configs;
+package br.com.casadocodigo.loja.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

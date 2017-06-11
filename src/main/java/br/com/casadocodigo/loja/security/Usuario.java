@@ -1,4 +1,4 @@
-package br.com.casadocodigo.security;
+package br.com.casadocodigo.loja.security;
 
 import java.time.LocalDate;
 import java.util.Collection;

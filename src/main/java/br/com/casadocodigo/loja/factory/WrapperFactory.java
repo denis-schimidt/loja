@@ -1,4 +1,4 @@
-package br.com.casadocodigo.factory;
+package br.com.casadocodigo.loja.factory;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

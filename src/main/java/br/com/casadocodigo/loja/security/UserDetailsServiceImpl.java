@@ -1,4 +1,4 @@
-package br.com.casadocodigo.security;
+package br.com.casadocodigo.loja.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;

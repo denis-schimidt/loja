@@ -1,4 +1,4 @@
-package br.com.casadocodigo;
+package br.com.casadocodigo.loja;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
