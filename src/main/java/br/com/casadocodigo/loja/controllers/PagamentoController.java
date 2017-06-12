@@ -50,7 +50,7 @@ public class PagamentoController {
 				redirectAttributes.addFlashAttribute("resultadoProcessamento", "Falha ao executar o pagamento devido ao valor >> " + valorFormatado);
 			}
 			
-			return new ModelAndView("redirect:/home");
+			return new ModelAndView("redirect:/");
 		};
 	}
 }

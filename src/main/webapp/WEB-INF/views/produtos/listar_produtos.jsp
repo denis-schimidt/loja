@@ -32,6 +32,7 @@
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#">Usuário: <sec:authentication property="principal" var="usuario"></sec:authentication>${usuario.username}</a></li>
+	        <li><a href='<c:url value="/logout"/>'>Sair</a></li>
 	      </ul>
 	    </div>
 	  </div>

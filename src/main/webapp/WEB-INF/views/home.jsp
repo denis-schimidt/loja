@@ -32,6 +32,7 @@
   <header id="layout-header">
 		<div class="clearfix container">
 			<a href="/" id="logo">
+				<img alt="Logo" src="${contextPath}imagens/cdc-logo.svg">
 			</a>
 			<div id="header-content">
 				<nav id="main-nav">
@@ -42,11 +43,14 @@
 	
 							<li><a href="${s:mvcUrl('PC#exibirCadastroNovoProduto').build()}" rel="nofollow">Cadastro de Produtos</a></li>
 	
-							<li><a href="${s:mvcUrl('CCC#listarCarrinhoItem').build()}" rel="nofollow">Carrinho</a></li>
 						</sec:authorize>
 						<li><a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">Sobre Nós</a></li>
 
 						<li><a href="/pages/perguntas-frequentes" rel="nofollow">Perguntas Frequentes</a></li>
+						
+						<sec:authorize access="isAuthenticated()">
+							<li><a href='<c:url value="/logout" />' rel="nofollow">Sair</a></li>
+						</sec:authorize>
 					</ul>
 				</nav>
 			</div>

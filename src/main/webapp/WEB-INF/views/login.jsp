@@ -11,22 +11,26 @@
 <c:url value="/css/" var="cssPath"/>
 <link rel="stylesheet" href="${cssPath}/bootstrap.min.css">
 <link rel="stylesheet" href="${cssPath}/bootstrap-theme.min.css">
+<link rel="stylesheet" href="${cssPath}/login.css">
 
 </head>
 <body>
 	<div class="container">
-		<form:form servletRelativeAction="/login" method="POST">
-			<div class="form-group">
-				<label>Usuário</label>
-				<input type="text" name="username" maxlength="10" class="form-control"/>
-			</div>
-			<div class="form-group">
-				<label>Descrição</label>
-				<input type="password" name="password" maxlength="10" class="form-control"/>
-			</div>
-
-			<button value="submit" class="btn btn-primary">Login</button>
-		</form:form>
-	</div>	
+	    <div class="row">
+	        <div class="col-sm-6 col-md-4 col-md-offset-4">
+	            <h1 class="text-center login-title">Login na Casa do Código</h1>
+	            <div class="account-wall">
+	                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+	                    alt="">
+	                <form:form servletRelativeAction="/login" method="POST" cssClass="form-signin">  
+		                <input type="text" name="username" class="form-control" placeholder="Email" required autofocus>
+		                <input type="password" name="password" class="form-control" placeholder="Password" required>
+		                <button class="btn btn-lg btn-primary btn-block" type="submit">
+		                    Logar</button>
+	                </form:form>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="s" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <!DOCTYPE html>
 <html>
@@ -52,6 +53,10 @@
 	      <ul class="nav navbar-nav">
 	        <li><a href="${s:mvcUrl('PC#listarProdutos').build()}">Lista de Produtos</a></li>
 	        <li><a href="${s:mvcUrl('PC#exibirCadastroNovoProduto').build()}">Cadastro de Produtos</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">Usuário: <sec:authentication property="principal" var="usuario"></sec:authentication>${usuario.username}</a></li>
+	        <li><a href='<c:url value="/logout"/>'>Sair</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div>
